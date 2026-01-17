@@ -1,0 +1,363 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+char answer, playagain,choice;
+printf(" CHOOSE YOUR LEVEL\n");
+printf("   A.EASY(E)\n   B.HARD(H)\n");
+printf("  ENTER YOUR CHOICE\n");
+scanf( " %c",&choice);
+if(toupper(choice)=='E')
+{
+do {  
+    int score = 0;  
+    printf("\nIT QUIZ APPLICATION\n\n");  
+
+    // Q1  
+    printf(" Q1: Who is the father of C language?\n");  
+    printf("  A. James Gosling\n  B. Dennis Ritchie\n  C. Bjarne Stroustrup\n  D. Guido van Rossum\n");  
+    printf(" Enter your answer: ");  
+    scanf( " %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q2  
+    printf("\n Q2: Which language is mainly used for system programming?\n");  
+    printf("   A. C\n   B. Python\n   C. JavaScript\n   D. HTML\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q3  
+    printf("\n Q3: What is the full form of JVM?\n");  
+    printf("   A. Java Virtual Machine\n   B. Java Variable Method\n   C. Java Virtual Module\n   D. Java Version Manager\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q4  
+    printf("\n Q4: Which language is used for web styling?\n");  
+    printf("   A. HTML\n   B. CSS\n   C. Java\n   D.C\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q5  
+    printf("\n Q5: Which symbol is used for comments in C?\n");  
+    printf("   A. //\n   B. /* */\n   C. #\n   D. Both A & B\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'D') score++;  
+
+    // Q6  
+    printf("\n Q6: What is the main memory of a computer called?\n");  
+    printf("   A. Hard Disk\n   B. RAM\n   C. ROM\n   D. Cache\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q7  
+    printf("\n Q7: CPU stands for?\n");  
+    printf("   A. Central Processing Unit\n   B. Central Programming Unit\n   C. Control Processing Unit\n   D. Computer Processing Unit\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q8  
+    printf("\n Q8: What is the brain of the computer?\n");  
+    printf("   A. ALU\n   B. RAM\n   C. CPU\n   D. ROM\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'C') score++;  
+
+    // Q9  
+    printf("\n Q9: Which device is used to display output?\n");  
+    printf("   A. Keyboard\n   B. Monitor\n   C. Mouse\n   D. Printer\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q10  
+    printf("\n Q10: Which is non-volatile memory?\n");  
+    printf("   A. RAM\n   B. ROM\n   C. Cache\n   D. Registers\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q11  
+    printf("\n Q11: What does IP stand for in networking?\n");  
+    printf("   A. Internet Protocol\n   B. Internal Protocol\n   C. Internet Process\n   D. Integrated Program\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q12  
+    printf("\n Q12: What is the full form of HTTP?\n");  
+    printf("   A. HyperText Transfer Protocol\n   B. HyperText Transmission Process\n   C. Hyper Transfer Text Protocol\n   D. Hyperlink Text Transfer\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q13  
+    printf("\n Q13: Which device connects multiple computers in a network?\n");  
+    printf("   A. Switch\n   B. Mouse\n   C. Monitor\n   D. CPU\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q14  
+    printf("\n Q14: Which one is a wireless technology?\n");  
+    printf("   A. LAN\n   B. Wi-Fi\n   C. Ethernet\n   D. USB\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q15  
+    printf("\n Q15: Which port is used for web traffic?\n");  
+    printf("   A. 21\n   B. 25\n   C. 80\n   D. 110\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'C') score++;  
+
+    // Q16  
+    printf("\n Q16: Which OS is developed by Microsoft?\n");  
+    printf("   A. Linux\n   B. Windows\n   C. MacOS\n   D. Unix\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q17  
+    printf("\n Q17: Which is an open-source OS?\n");  
+    printf("   A. Linux\n   B. Windows\n   C. MacOS\n   D. DOS\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'A') score++;  
+
+    // Q18  
+    printf("\n Q18: Which software converts high-level code into machine code?\n");  
+    printf("   A. Interpreter\n   B. Compiler\n   C. Both A & B\n   D. Debugger\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'C') score++;  
+
+    // Q19  
+    printf("\n Q19: Which software is used to browse the internet?\n");  
+    printf("   A. Word\n   B. Chrome\n   C. Excel\n   D. PowerPoint\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'B') score++;  
+
+    // Q20  
+    printf("\n Q20: Which is not a programming language?\n");  
+    printf("   A. Python\n   B. Java\n   C. HTML\n   D. C\n");  
+    printf(" Enter your answer: ");  
+    scanf("  %c", &answer);  
+    if(toupper(answer) == 'C') score++;  
+
+    // Result  
+    printf("\n     Quiz Completed!\n");  
+    printf("     Your Score: %d/20\n", score);  
+
+    if(score == 20)  
+        printf("   Result: Excellent!\n");  
+    else if(score >= 15)  
+        printf("   Result: Very Good!\n");  
+    else if(score >= 10)  
+        printf("   Result: Good\n");  
+    else  
+        printf("   Result: Needs Improvement\n");  
+
+    // Replay  
+    printf("\n  Do you want to play again? (Y/N): ");  
+    scanf( " %c", &playagain);  
+    playagain = toupper(playagain);  
+
+} while(playagain == 'Y');  
+
+printf("\n     Thank you for playing!\n");
+}
+
+else if(toupper(choice)=='H')
+{
+    do{
+    	int score=0;char playagain;
+    printf("===== Difficult Questions=====\n\n");
+
+    // Question 1
+    printf(" Q1. What is the sum of digits of 9876?\n");
+    printf("   A) 20 \n   B) 30\n   C) 25 \n   D) 15\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 2
+    printf("\n Q2. Which of the following is a prime number between 70 and 80?\n");
+    printf("   A) 71 \n   B) 75  \n   C) 77 \n   D) 79\n");
+    printf(" Enter your answer (For multiple correct, choose first correct): ");
+    scanf("  %c", &answer);
+    if(toupper(answer) == 'A' || toupper(answer) == 'D') score++;
+
+    // Question 3
+    printf("\n Q3. If int x = 50; int *p = &x;, what does *p give?\n");
+    printf("   A) 50 \n   B) Address of x\n   C) Null  \n   D) Garbage value\n");
+    printf(" Enter your answer: ");
+    scanf("  %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 4
+    printf("\n Q4. Which function is used to find the length of a string in C?\n");
+    printf("   A) strlen() \n   B) strlength() \n   C) size() \n   D) lengthof()\n");
+    printf(" Enter your answer: ");
+    scanf("  %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 5
+    printf("\n Q5. Which expression checks if a number n is even?\n");
+    printf("   A) n %% 2 == 1\n   B) n %% 2 == 0  \n   C) n / 2 == 0  \n   D) n & 1 == 1\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'B') score++;
+
+    // Question 6
+    printf("\n Q6. Which loop calculates factorial correctly?\n");
+    printf("   A) for(i=1;i<=n;i++) fact *= i; \n      B) for(i=n;i>=1;i--) fact += i;\n");
+    printf("   C) while(i<n) fact *= i; \n    D) for(i=0;i<n;i++) fact *= i;\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 7
+    printf("\n Q7. If int arr[5] = {5,10,15,20,25}; what is arr[4]?\n");
+    printf("   A) 20 \n   B) 25 \n   C) 15 \n   D)   5\n");
+    printf(" Enter your answer: ");
+    scanf("  %c", &answer);
+    if(toupper(answer) == 'B') score++;
+
+    // Question 8
+    printf("\n Q8. Which statements swap a and b without a temporary variable?\n");
+    printf("   A) a = a ^ b; b = a ^ b; a = a ^ b;\n");
+    printf("   B) a = a + b; b = a - b; a = a - b;\n");
+    printf("   C) temp = a; a = b; b = temp;\nD) Only B\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 9
+    printf("\n Q9. For a 2x4 matrix, the transpose will be of size?\n");
+    printf("   A) 2x4  \n   B) 4x2 \n   C) 2x2 \n   D) 4x4\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'B') score++;
+
+    // Question 10
+    printf("\n Q10. Which expression converts lowercase 'd' to uppercase?\n");
+    printf("   A) c - 32\n   B) c + 32\n   C) toupper(c)  \n   D) Both A and C\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'D') score++;
+
+    // Question 11
+    printf("\n Q11. The 8th term in Fibonacci series starting 0,1 is?\n");
+    printf("   A) 21  \n   B) 13\n   C) 34 \n   D) 20\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 12
+    printf("\n Q12. To find largest number in int arr[6] = {4,8,12,3,9,1}; which is correct?\n");
+    printf("   A) Loop through array & compare \n    B) Sort & pick last element\n   C) Both A & B   D) None\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'C') score++;
+
+    // Question 13
+    printf("\n Q13. Which condition checks if year y is a leap year?\n");
+    printf("   A) (y%%4==0 && y%%100!=0) || (y%%400==0)  \n   B) y%%4==0 \n   C) y%%100==0  \n   D) y%%400==0\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 14
+    printf("\n Q14. Which loop correctly reverses a number n?\n");
+    printf("   A)while(n!=0){rev=rev*10+n%%10; n/=10;}  \n   B) for(n;n>0;n--) rev+=n;\n");
+    printf("   C) do{rev+=n;}while(n!=0);   D) rev=n*10;\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 15
+    printf("\n Q15. int arr[5]={2,4,6,8,10}; sum is?\n");
+    printf("   A) 28  \n   B) 30  \n   C) 25 \n         D) 20\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'B') score++;
+
+    // Question 16
+    printf("\n Q16. Which function checks if a character is alphabet?\n");
+    printf("   A) isalpha()  \n   B) isdigit() \n       C) ischar() \n    D) isnumber()\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 17
+    printf("\n Q17. Which number is a palindrome?\n");
+    printf("   A) 12321  \n   B) 1221\n   C) 12345 \n   D) Both A & B\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'D') score++;
+
+    // Question 18
+    printf("\n Q18. Which sorting algorithm is easiest to implement in C for small arrays?\n");
+    printf("   A) Bubble Sort\n   B) Quick Sort  \n   C) Merge Sort\n   D) Heap Sort\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Question 19
+    printf("\n Q19. int arr[3]={10,20,30}; int *p=arr; *(p+2) gives?\n");
+    printf("   A) 10  \n   B) 20 \n   C) 30\n   D) Garbage\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'C') score++;
+
+    // Question 20
+    printf("\n Q20. Which loop prints a 5x5 star pattern correctly?\n");
+    printf("   A) for(i=1;i<=5;i++){for(j=1;j<=5;j++) printf(\"*\"); printf(\"\\n\");}\n");
+    printf("   B) for(i=1;i<=5;i++) printf(\"*\\n\");\n   C) while(i<=5) printf(\"*\");\n   D) None of above\n");
+    printf(" Enter your answer: ");
+    scanf(" %c", &answer);
+    if(toupper(answer) == 'A') score++;
+
+    // Final Score
+    printf("\n    ===== Quiz Completed! =====\n");
+    printf("    Your Score: %d/20\n", score);
+    if(score==20) printf("Excellent .you corrext all");
+   else if(score >=15) printf("   Great.\n");
+    else if(score >= 10) printf("   Good!\n");
+    else printf("   Keep Practicing!\n");
+    
+    printf("   DO YOU WANT TO REPLAY AGAIN(Y/N)\n");
+    scanf("%c",&playagain);
+    playagain=toupper(playagain);
+    }while(playagain=='Y');
+    
+}
+else
+printf("wrong entry");
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
